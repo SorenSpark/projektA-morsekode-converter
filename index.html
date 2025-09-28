@@ -8,7 +8,21 @@
     <title>Morsekode konverter</title>
 </head>
 <body>
-    <main>
+    <main class="container">
+    <h1>Morsekode konverter</h1>
+
+    <label for="textInput">Indtast tekst (bogstaver, tal og mellemrum):</label>
+    <textarea id="textInput" rows="5" placeholder="F.eks. SOS eller Hej Verden 123"></textarea>
+
+    <div class="controls">
+      <button id="translateBtn">Oversæt</button>
+      <button id="clearBtn" type="button">Ryd</button>
+      <button id="copyBtn" type="button">Kopier resultat</button>
+    </div>
+
+    <h2>Resultat</h2>
+    <pre id="output" aria-live="polite" tabindex="0" class="output">Her vises morsekoden...</pre>
+
 
 
     </main>
