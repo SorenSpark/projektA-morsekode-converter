@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script>
     <title>Morsekode konverter</title>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <main class="container">
@@ -15,13 +15,14 @@
         <textarea id="textInput" rows="3" placeholder="F.eks. SOS eller Hej Verden 123"></textarea>
 
         <div class="controls">
-            <button id="translateBtn">Oversæt</button>
+            <button id="translateBtn">konverter</button>
         </div>
 
         <h2>Resultat</h2>
         <pre id="output" aria-live="polite" class="output">Her vises morsekoden:</pre>
+        <p>* Bogstaver separeres med mellemrum, ord med " / ".</p>
     </main>
 
-    <script src="js/script.js" defer></script>
+    
 </body>
 </html>

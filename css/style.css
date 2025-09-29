@@ -37,7 +37,7 @@ label{
 textarea{
   width:100%;
   resize:vertical;
-  min-height:100px;
+  min-height:0px;
   padding:0.6rem;
   border-radius:8px;
   border:1px solid rgba(255,255,255,0.06);
@@ -62,6 +62,10 @@ button{
   font-weight:600;
 }
 
+button:hover{
+  background:linear-gradient(180deg,#7c5ed3,#5a3fb0);
+}
+
 button[type="button"]{
   background:#3a3a3a;
   color:#ddd
@@ -76,5 +80,6 @@ button[type="button"]{
   white-space:pre-wrap;
   border:1px solid rgba(255,255,255,0.03);
   color:#dfe7ff;
+  font-size: 1.25em;
 }
 
