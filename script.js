@@ -17,7 +17,7 @@ const outputEl = document.getElementById('output');
 
 // Funktion til at oversætte tekst til morsekode
 function translateToMorse(text) {
-    if(!text) return '';
+    if(!text) return ''; // tom input -> tom output
 
 
 // Trim og split i ord (et eller flere whitespace som separator)
@@ -27,7 +27,7 @@ function translateToMorse(text) {
     // hvert tegn i ordet
     const letters = Array.from(word).map(ch => {
       const key = ch.toUpperCase();
-      return morse[key] ?? '?'; // hvis ikke fundet -> '?'
+      return morse[key] ?? '?'; // hvis bogstavet/tallet ikke findes i vores objekt vil den angive '?' i output ved det tegn
     });
     // bogstaver adskilles med mellemrum
     return letters.join(' ');
@@ -41,5 +41,5 @@ function translateToMorse(text) {
 btn.addEventListener('click', () => {
   const text = inputEl.value;
   const morse = translateToMorse(text);
-  outputEl.textContent = morse || '(ingen output)';
+  outputEl.textContent = morse || 'Du skal indtaste en gyldig tekst!';
 });
